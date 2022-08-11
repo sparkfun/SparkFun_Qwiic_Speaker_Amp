@@ -3,21 +3,21 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -38,13 +38,13 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="13" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -65,7 +65,7 @@
 <layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="3" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="3" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -6907,7 +6907,9 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <attribute name="VALUE" x="23.7744" y="24.36621875" size="0.6096" layer="28" font="vector" ratio="20" rot="MR180" align="top-center"/>
 </element>
 <element name="U$39" library="output" package="#JP1#2" value="" x="21.0693" y="23.18511875" smashed="yes" rot="MR0"/>
-<element name="LOGO6" library="SparkFun-Aesthetics" package="ORDERING_INSTRUCTIONS" value="SPECIAL_INSTRUCTIONS-ORDERING" x="55.88" y="44.45" smashed="yes"/>
+<element name="LOGO6" library="SparkFun-Aesthetics" package="ORDERING_INSTRUCTIONS" value="SPECIAL_INSTRUCTIONS-ORDERING" x="55.88" y="44.45" smashed="yes">
+<attribute name="PROD_ID" value="PCB-17002" x="55.88" y="44.45" size="1.778" layer="27" display="off"/>
+</element>
 <element name="TP1" library="SparkFun-Connectors" package="TP_15TH" value="" x="21.59" y="21.59" smashed="yes"/>
 <element name="TP2" library="SparkFun-Connectors" package="TP_15TH" value="" x="21.59" y="17.78" smashed="yes"/>
 <element name="U$40" library="output" package="##SHDN##2" value="" x="9.4361" y="7.44728125" smashed="yes"/>
@@ -6967,17 +6969,11 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <contactref element="J4" pad="1"/>
 <contactref element="R5" pad="1"/>
 <contactref element="J6" pad="1"/>
-<polygon width="0.2032" layer="15" isolate="0.3048">
-<vertex x="0" y="0"/>
-<vertex x="0" y="25.4"/>
-<vertex x="43.18" y="25.4"/>
-<vertex x="43.18" y="0"/>
-</polygon>
 <via x="32.22751875" y="12.799059375" extent="1-16" drill="0.3048"/>
 <via x="32.25291875" y="10.309859375" extent="1-16" drill="0.3048"/>
 <via x="32.2605375" y="6.322059375" extent="1-16" drill="0.3048"/>
 <via x="32.3240375" y="3.9116" extent="1-16" drill="0.3048"/>
-<polygon width="0.2032" layer="2" isolate="0.3048">
+<polygon width="0.2032" layer="15" isolate="0.3048">
 <vertex x="22.3012" y="9.92378125"/>
 <vertex x="22.3012" y="7.432040625"/>
 <vertex x="24.7904" y="7.432040625"/>
@@ -7007,6 +7003,12 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <via x="26.7436625" y="15.80641875" extent="1-16" drill="0.3048"/>
 <contactref element="C17" pad="2"/>
 <via x="18.97888125" y="11.88211875" extent="1-16" drill="0.3048"/>
+<polygon width="0.2032" layer="2" isolate="0.3048">
+<vertex x="0" y="0"/>
+<vertex x="0" y="25.4"/>
+<vertex x="43.18" y="25.4"/>
+<vertex x="43.18" y="0"/>
+</polygon>
 </signal>
 <signal name="SCL">
 <contactref element="R2" pad="1"/>
@@ -7211,12 +7213,6 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <contactref element="R1" pad="2"/>
 <contactref element="J4" pad="2"/>
 <contactref element="LED" pad="2"/>
-<polygon width="0.2032" layer="2" isolate="0.3048" rank="2">
-<vertex x="0" y="0"/>
-<vertex x="0" y="25.4"/>
-<vertex x="43.18" y="25.4"/>
-<vertex x="43.18" y="0"/>
-</polygon>
 <wire x1="18.605503125" y1="9.69988125" x2="18.605503125" y2="10.58418125" width="0.2032" layer="1"/>
 <wire x1="18.605503125" y1="10.58418125" x2="18.608040625" y2="10.58418125" width="0.2032" layer="1"/>
 <via x="18.608040625" y="10.58418125" extent="1-16" drill="0.3048"/>
@@ -7265,6 +7261,12 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <via x="25.463503125" y="22.46375625" extent="1-16" drill="0.3048"/>
 <wire x1="24.1808" y1="23.22321875" x2="24.704040625" y2="23.22321875" width="0.508" layer="16"/>
 <wire x1="24.704040625" y1="23.22321875" x2="25.463503125" y2="22.46375625" width="0.508" layer="16"/>
+<polygon width="0.2032" layer="15" isolate="0.3048" rank="2">
+<vertex x="0" y="0"/>
+<vertex x="0" y="25.4"/>
+<vertex x="43.18" y="25.4"/>
+<vertex x="43.18" y="0"/>
+</polygon>
 </signal>
 <signal name="INL_SCRWPN">
 <contactref element="J2" pad="TSH"/>
