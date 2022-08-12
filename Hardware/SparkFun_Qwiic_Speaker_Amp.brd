@@ -79,7 +79,7 @@
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
-<layer number="100" name="Muster" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="yes"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="no"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="no"/>
 <layer number="103" name="tMap" color="7" fill="1" visible="no" active="no"/>
@@ -234,10 +234,10 @@
 <rectangle x1="36.941759375" y1="13.41881875" x2="38.32098125" y2="13.680440625" layer="22"/>
 <rectangle x1="38.229540625" y1="16.893540625" x2="40.06341875" y2="18.933159375" layer="22"/>
 <rectangle x1="36.9443" y1="18.615659375" x2="38.29811875" y2="18.93061875" layer="22"/>
-<text x="6.6929" y="23.944578125" size="0.8128" layer="1" font="vector" ratio="25">1</text>
-<text x="7.4549" y="23.944578125" size="0.8128" layer="2" font="vector" ratio="25">2</text>
-<text x="6.6929" y="23.055578125" size="0.8128" layer="15" font="vector" ratio="25">3</text>
-<text x="8.0899" y="23.055578125" size="0.8128" layer="16" font="vector" ratio="25" rot="MR0">4</text>
+<text x="7.223759375" y="23.99791875" size="0.8128" layer="1" font="vector" ratio="25">1</text>
+<text x="7.985759375" y="23.99791875" size="0.8128" layer="2" font="vector" ratio="25">2</text>
+<text x="7.223759375" y="23.10891875" size="0.8128" layer="15" font="vector" ratio="25">3</text>
+<text x="8.620759375" y="23.10891875" size="0.8128" layer="16" font="vector" ratio="25" rot="MR0">4</text>
 <text x="57.15" y="33.02" size="1.778" layer="51" font="vector" ratio="15">Board Thickness is 1.6mm</text>
 <text x="57.15" y="30.48" size="1.778" layer="51" font="vector" ratio="15">4-Layer</text>
 <text x="57.15" y="27.94" size="1.778" layer="51" font="vector" ratio="15">HASL Finish</text>
@@ -6877,10 +6877,10 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <vertex x="24.7904" y="7.432040625"/>
 <vertex x="24.7904" y="9.92378125"/>
 </polygon>
-<via x="24.15031875" y="9.281159375" extent="1-16" drill="0.3048"/>
-<via x="22.946359375" y="9.281159375" extent="1-16" drill="0.3048"/>
-<via x="22.9489" y="8.1178375" extent="1-16" drill="0.3048"/>
-<via x="24.140159375" y="8.12291875" extent="1-16" drill="0.3048"/>
+<via x="23.543259375" y="9.3218" extent="1-16" drill="0.3048"/>
+<via x="22.90318125" y="8.674096875" extent="1-16" drill="0.3048"/>
+<via x="23.535640625" y="7.983215625" extent="1-16" drill="0.3048"/>
+<via x="24.2062" y="8.679178125" extent="1-16" drill="0.3048"/>
 <via x="28.7909" y="14.742159375" extent="1-16" drill="0.3048"/>
 <via x="26.8452625" y="12.733021875" extent="1-16" drill="0.3048"/>
 <via x="23.55341875" y="5.379715625" extent="1-16" drill="0.3048"/>
@@ -6918,8 +6918,9 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <contactref element="R2" pad="1"/>
 <contactref element="J1" pad="4"/>
 <contactref element="U6" pad="17"/>
-<wire x1="21.448340625" y1="9.1741" x2="20.267040625" y2="9.1741" width="0.2032" layer="1"/>
-<wire x1="20.267040625" y1="9.1741" x2="20.055840625" y2="9.3853" width="0.2032" layer="1"/>
+<wire x1="21.448340625" y1="9.1741" x2="20.698840625" y2="9.1741" width="0.2032" layer="1"/>
+<wire x1="20.698840625" y1="9.1741" x2="20.487640625" y2="9.3853" width="0.2032" layer="1"/>
+<wire x1="20.055840625" y1="9.3853" x2="20.487640625" y2="9.3853" width="0.2032" layer="1"/>
 <via x="20.055840625" y="9.3853" extent="1-16" drill="0.3048"/>
 <wire x1="20.866103125" y1="21.399503125" x2="20.866103125" y2="15.75308125" width="0.2032" layer="16"/>
 <wire x1="20.866103125" y1="15.75308125" x2="20.104103125" y2="14.99108125" width="0.2032" layer="16"/>
@@ -7232,12 +7233,12 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 </mfgpreviewcolors>
 <errors>
 <approved hash="19,16,f2c62ce71cce2e8e"/>
-<approved hash="19,1,e920edd0502c54dc"/>
-<approved hash="19,1,312a3df0db84d75e"/>
-<approved hash="19,1,2c7b288fd853dca7"/>
-<approved hash="19,1,dd47d18babd7a71b"/>
 <approved hash="19,16,bfc87802330e1a4a"/>
 <approved hash="19,16,9799c9724bb1c79a"/>
+<approved hash="19,1,6c61684070e474c5"/>
+<approved hash="19,1,28eb281130cd3037"/>
+<approved hash="19,1,b1f4b019419d4070"/>
+<approved hash="19,1,6e046a0369376d30"/>
 </errors>
 </board>
 </drawing>
