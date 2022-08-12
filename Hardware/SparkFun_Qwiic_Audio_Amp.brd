@@ -3,21 +3,21 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -38,13 +38,13 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="13" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -65,7 +65,7 @@
 <layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="3" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="3" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -7002,13 +7002,19 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <contactref element="C15" pad="2"/>
 <via x="26.7436625" y="15.80641875" extent="1-16" drill="0.3048"/>
 <contactref element="C17" pad="2"/>
-<via x="18.97888125" y="11.88211875" extent="1-16" drill="0.3048"/>
+<via x="18.85188125" y="11.88211875" extent="1-16" drill="0.3048"/>
 <polygon width="0.2032" layer="2" isolate="0.3048">
 <vertex x="0" y="0"/>
 <vertex x="0" y="25.4"/>
 <vertex x="43.18" y="25.4"/>
 <vertex x="43.18" y="0"/>
 </polygon>
+<via x="42.5069" y="20.304759375" extent="1-16" drill="0.3048"/>
+<via x="42.4307" y="4.607559375" extent="1-16" drill="0.3048"/>
+<via x="19.2913" y="21.422359375" extent="1-16" drill="0.3048"/>
+<via x="12.3317" y="20.660359375" extent="1-16" drill="0.3048"/>
+<via x="18.1483" y="14.818359375" extent="1-16" drill="0.3048"/>
+<via x="12.0777" y="8.671559375" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="SCL">
 <contactref element="R2" pad="1"/>
@@ -7187,7 +7193,7 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <wire x1="22.75331875" y1="3.99325625" x2="22.750021875" y2="3.989959375" width="0.2794" layer="1"/>
 <wire x1="22.750021875" y1="3.989959375" x2="21.64588125" y2="3.989959375" width="0.2794" layer="1"/>
 </signal>
-<signal name="SDZ">
+<signal name="!SDZ!">
 <contactref element="U6" pad="18"/>
 <contactref element="R1" pad="1"/>
 <contactref element="J6" pad="4"/>
@@ -7320,7 +7326,7 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 </signal>
 </signals>
 <mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC8AA0000"/>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8FF0000"/>
 <mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
 <mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
 <mfgpreviewcolor name="coppercolor" color="0xFFA6AAA5"/>
@@ -7333,7 +7339,7 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <approved hash="19,1,2c7b288fd853dca7"/>
 <approved hash="19,1,dd47d18babd7a71b"/>
 <approved hash="19,16,bfc87802330e1a4a"/>
-<approved hash="19,16,aa45725d01180bc0"/>
+<approved hash="19,16,9799c9724bb1c79a"/>
 </errors>
 </board>
 </drawing>
