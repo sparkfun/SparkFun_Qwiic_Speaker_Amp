@@ -27025,9 +27025,6 @@ Steps (when compression is used) &lt;br&gt;
 <part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="GND17" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C15" library="SparkFun-Capacitors" deviceset="1.0UF" device="-0402T-16V-10%" value="1.0uF"/>
-<part name="C17" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0402T-16V-10%-X7R-WE" value="0.1uF"/>
-<part name="SUPPLY11" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
-<part name="GND18" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="JP1" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1" value="JP1"/>
 <part name="SUPPLY12" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
 <part name="LOGO6" library="SparkFun-Aesthetics" deviceset="SPECIAL_INSTRUCTIONS" device="-ORDERING">
@@ -27044,7 +27041,7 @@ Steps (when compression is used) &lt;br&gt;
 <text x="53.086" y="50.546" size="1.778" layer="97" font="vector">Cut I2C Jumper to 
 remove pullup jumpers 
 from the I2C bus.</text>
-<text x="238.76" y="7.62" size="2.54" layer="94" font="vector">v01</text>
+<text x="238.76" y="7.62" size="2.54" layer="94" font="vector">v10</text>
 <text x="149.098" y="6.858" size="1.778" layer="94" font="vector">Based on the Lilypad MP3 by Mike Grusin</text>
 <wire x1="96.52" y1="139.7" x2="63.5" y2="139.7" width="0.2032" layer="97" style="shortdash"/>
 <wire x1="63.5" y1="139.7" x2="63.5" y2="86.36" width="0.2032" layer="97" style="shortdash"/>
@@ -27319,16 +27316,6 @@ low power output.</text>
 <attribute name="NAME" x="147.828" y="168.148" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="147.828" y="163.322" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="C17" gate="G$1" x="157.48" y="165.1" smashed="yes">
-<attribute name="NAME" x="158.496" y="168.275" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="158.242" y="163.449" size="1.778" layer="96" font="vector"/>
-</instance>
-<instance part="SUPPLY11" gate="G$1" x="157.48" y="172.72" smashed="yes">
-<attribute name="VALUE" x="157.48" y="175.514" size="1.778" layer="96" font="vector" align="bottom-center"/>
-</instance>
-<instance part="GND18" gate="1" x="157.48" y="157.48" smashed="yes">
-<attribute name="VALUE" x="157.48" y="157.226" size="1.778" layer="96" font="vector" align="top-center"/>
-</instance>
 <instance part="JP1" gate="G$1" x="106.68" y="45.72" smashed="yes">
 <attribute name="VALUE" x="106.68" y="42.926" size="1.778" layer="96" font="vector" align="center"/>
 </instance>
@@ -27479,11 +27466,6 @@ low power output.</text>
 <wire x1="147.32" y1="162.56" x2="147.32" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 <pinref part="C15" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<wire x1="157.48" y1="160.02" x2="157.48" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="C17" gate="G$1" pin="2"/>
-<pinref part="GND18" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -27757,11 +27739,6 @@ low power output.</text>
 <pinref part="SUPPLY10" gate="G$1" pin="VCC"/>
 <wire x1="147.32" y1="170.18" x2="147.32" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="C15" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="C17" gate="G$1" pin="1"/>
-<pinref part="SUPPLY11" gate="G$1" pin="VCC"/>
-<wire x1="157.48" y1="170.18" x2="157.48" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY12" gate="G$1" pin="VCC"/>

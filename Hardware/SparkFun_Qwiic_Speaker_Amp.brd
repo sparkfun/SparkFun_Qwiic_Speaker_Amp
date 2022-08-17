@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0001" altunitdist="inch" altunit="inch"/>
@@ -196,7 +196,7 @@
 <board>
 <plain>
 <text x="2.54" y="-22.86" size="1.778" layer="51" font="vector">Based on the Lilypad MP3 by Mike Grusin</text>
-<text x="38.464" y="0.363" size="1.27" layer="16" font="vector" ratio="15" rot="SMR0">v01</text>
+<text x="38.464" y="0.363" size="1.27" layer="16" font="vector" ratio="15" rot="SMR0">v10</text>
 <text x="19.05" y="-20.32" size="1.778" layer="51" font="vector">Pete Lewis</text>
 <wire x1="0" y1="0" x2="43.18" y2="0" width="0.2032" layer="20"/>
 <wire x1="43.18" y1="0" x2="43.18" y2="25.4" width="0.2032" layer="20"/>
@@ -6781,11 +6781,6 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <attribute name="PROD_ID" value="CAP-12417" x="25.04948125" y="13.3223" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="VALUE" x="25.04948125" y="12.7603" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="C17" library="SparkFun-Capacitors" package="0402-TIGHT" value="0.1uF" x="23.276559375" y="14.7447" smashed="yes" rot="R180">
-<attribute name="NAME" x="23.276559375" y="14.1827" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-16507" x="23.276559375" y="14.7447" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-<attribute name="VALUE" x="23.276559375" y="15.3067" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
-</element>
 <element name="U$26" library="output" package="#VIN#30" value="" x="29.784040625" y="19.2405" smashed="yes" rot="MR270"/>
 <element name="U$27" library="output" package="#GND#31" value="" x="33.30701875" y="19.065240625" smashed="yes" rot="MR270"/>
 <element name="U$18" library="output" package="#L#33" value="" x="5.51941875" y="10.96518125" smashed="yes" rot="MR0"/>
@@ -6831,7 +6826,7 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 </signal>
 <signal name="GND">
 <contactref element="J1" pad="1"/>
-<polygon width="0.2032" layer="1">
+<polygon width="0.2032" layer="1" rank="2">
 <vertex x="0" y="0"/>
 <vertex x="43.09" y="0"/>
 <vertex x="43.09" y="25.52"/>
@@ -6899,7 +6894,6 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <contactref element="C13" pad="2"/>
 <contactref element="C15" pad="2"/>
 <via x="26.7436625" y="15.80641875" extent="1-16" drill="0.3048"/>
-<contactref element="C17" pad="2"/>
 <via x="18.85188125" y="11.88211875" extent="1-16" drill="0.3048"/>
 <polygon width="0.2032" layer="2" isolate="0.3048">
 <vertex x="0" y="0"/>
@@ -7129,38 +7123,28 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <contactref element="C15" pad="1"/>
 <via x="24.5465625" y="2.976878125" extent="1-16" drill="0.3048"/>
 <wire x1="24.548340625" y1="6.5741" x2="24.548340625" y2="5.648959375" width="0.2794" layer="1"/>
-<wire x1="24.548340625" y1="5.648959375" x2="24.548340625" y2="4.977" width="0.2794" layer="1"/>
+<wire x1="24.548340625" y1="5.648959375" x2="24.548340625" y2="4.977" width="0.5842" layer="1"/>
 <wire x1="24.5545625" y1="4.970778125" x2="24.548340625" y2="4.977" width="0.2794" layer="1"/>
-<wire x1="24.5545625" y1="4.970778125" x2="24.5545625" y2="3.911603125" width="0.2794" layer="1"/>
+<wire x1="24.5545625" y1="4.970778125" x2="24.5545625" y2="3.911603125" width="0.5842" layer="1"/>
 <wire x1="24.554559375" y1="3.9116" x2="24.5545625" y2="3.911603125" width="0.2794" layer="1"/>
 <wire x1="24.554559375" y1="3.9116" x2="24.5465625" y2="3.903603125" width="0.2794" layer="1"/>
-<wire x1="24.5465625" y1="3.903603125" x2="24.5465625" y2="2.976878125" width="0.2794" layer="1"/>
+<wire x1="24.5465625" y1="3.903603125" x2="24.5465625" y2="2.976878125" width="0.5842" layer="1"/>
 <wire x1="24.048340625" y1="6.5741" x2="24.048340625" y2="6.145403125" width="0.2794" layer="1"/>
 <wire x1="24.048340625" y1="6.5741" x2="24.048340625" y2="5.800784375" width="0.2794" layer="1"/>
 <wire x1="24.200165625" y1="5.648959375" x2="24.548340625" y2="5.648959375" width="0.2794" layer="1"/>
 <wire x1="24.048340625" y1="5.800784375" x2="24.200165625" y2="5.648959375" width="0.2794" layer="1"/>
 <wire x1="24.548340625" y1="10.7741" x2="24.548340625" y2="11.597640625" width="0.2794" layer="1"/>
-<wire x1="24.548340625" y1="11.597640625" x2="24.548340625" y2="12.2162625" width="0.2794" layer="1"/>
+<wire x1="24.548340625" y1="11.597640625" x2="24.548340625" y2="12.2162625" width="0.5842" layer="1"/>
 <wire x1="24.548340625" y1="12.2162625" x2="24.549478125" y2="12.2174" width="0.2794" layer="1"/>
-<wire x1="24.549478125" y1="12.2174" x2="24.549478125" y2="13.322296875" width="0.2794" layer="1"/>
+<wire x1="24.549478125" y1="12.2174" x2="24.549478125" y2="13.322296875" width="0.5842" layer="1"/>
 <wire x1="24.549478125" y1="13.322296875" x2="24.54948125" y2="13.3223" width="0.2794" layer="1"/>
 <via x="24.556721875" y="14.1884375" extent="1-16" drill="0.3048"/>
-<via x="23.787103125" y="15.709896875" extent="1-16" drill="0.3048"/>
-<contactref element="C17" pad="1"/>
-<wire x1="23.776559375" y1="14.7447" x2="23.776559375" y2="15.699353125" width="0.2794" layer="1"/>
-<wire x1="23.776559375" y1="15.699353125" x2="23.787103125" y2="15.709896875" width="0.2794" layer="1"/>
-<wire x1="23.776559375" y1="11.884278125" x2="23.776559375" y2="14.7447" width="0.2794" layer="1"/>
-<wire x1="24.191340625" y1="11.597640625" x2="24.548340625" y2="11.597640625" width="0.2794" layer="1"/>
 <wire x1="31.65348125" y1="19.872959375" x2="29.7460625" y2="21.780378125" width="0.2794" layer="16"/>
 <wire x1="29.7460625" y1="21.780378125" x2="29.7460625" y2="21.8059" width="0.2794" layer="16"/>
 <wire x1="29.7460625" y1="21.8059" x2="27.39898125" y2="21.8059" width="0.508" layer="1"/>
 <wire x1="26.72588125" y1="21.1328" x2="26.72588125" y2="18.718096875" width="0.508" layer="1"/>
 <wire x1="27.39898125" y1="21.8059" x2="26.72588125" y2="21.1328" width="0.508" layer="1"/>
-<wire x1="23.776559375" y1="11.884278125" x2="23.548340625" y2="11.656059375" width="0.2794" layer="1"/>
-<wire x1="23.548340625" y1="11.656059375" x2="23.548340625" y2="10.7741" width="0.2794" layer="1"/>
-<wire x1="24.048340625" y1="10.7741" x2="24.048340625" y2="11.454640625" width="0.2794" layer="1"/>
-<wire x1="24.048340625" y1="11.454640625" x2="24.191340625" y2="11.597640625" width="0.2794" layer="1"/>
-<wire x1="24.54948125" y1="13.3223" x2="24.54948125" y2="14.181196875" width="0.2794" layer="1"/>
+<wire x1="24.54948125" y1="13.3223" x2="24.54948125" y2="14.181196875" width="0.5842" layer="1"/>
 <wire x1="24.54948125" y1="14.181196875" x2="24.556721875" y2="14.1884375" width="0.2794" layer="1"/>
 <contactref element="JP1" pad="2"/>
 <via x="25.463503125" y="22.46375625" extent="1-16" drill="0.3048"/>
@@ -7171,6 +7155,30 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <vertex x="0" y="25.4"/>
 <vertex x="43.18" y="25.4"/>
 <vertex x="43.18" y="0"/>
+</polygon>
+<via x="24.5465625" y="2.214878125" extent="1-16" drill="0.3048"/>
+<via x="25.3085625" y="2.214878125" extent="1-16" drill="0.3048"/>
+<wire x1="23.548340625" y1="11.356340625" x2="23.548340625" y2="10.7741" width="0.2794" layer="1"/>
+<wire x1="24.548340625" y1="11.597640625" x2="24.13" y2="11.597640625" width="0.2794" layer="1"/>
+<wire x1="24.13" y1="11.597640625" x2="23.789640625" y2="11.597640625" width="0.2794" layer="1"/>
+<wire x1="23.789640625" y1="11.597640625" x2="23.548340625" y2="11.356340625" width="0.2794" layer="1"/>
+<wire x1="24.048340625" y1="10.7741" x2="24.048340625" y2="11.51598125" width="0.2794" layer="1"/>
+<wire x1="24.048340625" y1="11.51598125" x2="24.13" y2="11.597640625" width="0.2794" layer="1"/>
+<via x="24.556721875" y="14.9504375" extent="1-16" drill="0.3048"/>
+<via x="25.318721875" y="14.9504375" extent="1-16" drill="0.3048"/>
+<via x="25.3085625" y="2.976878125" extent="1-16" drill="0.3048"/>
+<via x="25.318721875" y="14.1884375" extent="1-16" drill="0.3048"/>
+<polygon width="0.2032" layer="1" isolate="0.3048">
+<vertex x="25.567640625" y="15.196821875"/>
+<vertex x="24.323040625" y="15.196821875"/>
+<vertex x="24.323040625" y="13.964921875"/>
+<vertex x="25.567640625" y="13.964921875"/>
+</polygon>
+<polygon width="0.2032" layer="1" isolate="0.3048">
+<vertex x="25.557478125" y="3.19278125"/>
+<vertex x="24.312878125" y="3.19278125"/>
+<vertex x="24.312878125" y="1.96088125"/>
+<vertex x="25.557478125" y="1.96088125"/>
 </polygon>
 </signal>
 <signal name="INL_SCRWPN">
