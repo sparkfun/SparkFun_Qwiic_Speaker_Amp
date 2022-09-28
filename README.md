@@ -16,6 +16,8 @@ Repository Contents
 
 Documentation
 --------------
+
+* **[Installing an Arduino Library Guide](https://learn.sparkfun.com/tutorials/installing-an-arduino-library)** - Basic information on how to install an Arduino library.
 * **[Library](https://github.com/sparkfun/SparkFun_TPA2016D2_Arduino_Library)** - Arduino library for the Qwiic Speaker Amp.
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/2749)** - Basic hookup guide for the Qwiic Speaker Amp.
 
