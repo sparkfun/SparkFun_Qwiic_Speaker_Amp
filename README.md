@@ -3,9 +3,15 @@ SparkFun Qwiic Speaker Amp
 
 [![SparkFun Qwiic Speaker Amp - TPA2016D2](https://cdn.sparkfun.com/assets/parts/2/0/5/3/2/20690_DEV-_SparkFun_Qwiic_Speaker_Amp-_01.jpg)](https://www.sparkfun.com/products/20690)
 
-[*SparkFun Qwiic Speaker Amp - TPA2016D2 (DEV-20690)*](https://www.sparkfun.com/products/20690)
+[*SparkFun Qwiic Speaker Amp (DEV-20690)*](https://www.sparkfun.com/products/20690)
 
-A Qwiic-enabled breakout board for the Texas Instruments TPA2016D2 2.8W Class-D stereo audio amp.
+The SparkFun Qwiic Speaker Amp includes the Texas Instruments TPA2016D2 stereo, filter-free class-D audio power amplifier. What distinguishes this audio amplifier from others is that it features volume control (i.e. gain), Dynamic Range Compression (DRC), Automatic Gain Control (AGC), enable/disable amplifier, and its ability to be configured through software via I<sup>2</sup>C. Its efficient class-D operation also means low heat and long battery life when driving 4&ohm; speakers at up to 2.8W in stereo, and 8&ohm; speakers at up to 1.7W in stereo. This is quite a bit more power than the [mono amplifier (TPA2005D1) ](https://www.sparkfun.com/products/11044) or [Noisy Cricket stereo amplifier (LM4853)](https://www.sparkfun.com/products/14475). It won't shake a stadium but it will provide plenty of volume for your audio projects.
+
+The DRC and AGC is unique compared to other audio amplifiers. This is a powerful feature that allows you to "even out" the loud and quiet sections from your audio input. It also allows you to maximize the volume of your speakers. By fine-tuning the settings, you can get the most volume to prevent distortion of the audio signal. Using the DRC, AGC, and/or the limiter alone allows you to protect your speakers from getting damaged by extremely loud playback. We've written an extensive Arduino Library that allows you to easily control all of the amplifier's features from simple gain control to advanced AGC. Note that you will need to send the configuration to the TPA2016D2 upon every power cycle. 
+
+The board has been designed to be user friendly! Screw terminals are provided for the audio input, power, shutdown, and speaker output. A 3.5mm TRS connector is included as an alternative to easily insert an audio cable. Utilizing our handy Qwiic system, no soldering is required to connect it to the rest of your system when configuring the amplifier's settings. A power LED (PWR) is included on the board to indicate when power is applied to the amplifier through VIN. It can be disabled by cutting the LED jumper on the bottom side. For users that do not want to power the board with a separate power supply, you can close the JP1 jumper and use the same power supply as the microcontroller via the Qwiic connector's 3.3V pin.
+
+This board is great for projects that require you to amplify an audio signal for small, differential speakers. This breakout is also great when pairing it with your smartphone, computer, portable digital player, or any audio boards (such as the MP3 Trigger, Tsunami Super WAV Trigger, MP3 Player Shield, or Music Instrument Shield to name a few)! Add the Qwiic Speaker Amp in your next portable projects such as sound effects for your spooky Halloween pumpkin, wearable costumes, props, talking greeting cards, or USB speakers.
 
 Repository Contents
 -------------------
