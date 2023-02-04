@@ -25,6 +25,7 @@ Documentation
 
 * **[Installing an Arduino Library Guide](https://learn.sparkfun.com/tutorials/installing-an-arduino-library)** - Basic information on how to install an Arduino library.
 * **[Library](https://github.com/sparkfun/SparkFun_TPA2016D2_Arduino_Library)** - Arduino library for the Qwiic Speaker Amp.
+* **[SparkFun Fritzing repo](https://github.com/sparkfun/Fritzing_Parts/blob/main/products/20690_sfe_qwiic_speaker_amplifier_tpa2016d2_stereo_audio.fzpz)** - Fritzing diagrams for SparkFun products.
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/2749)** - Basic hookup guide for the Qwiic Speaker Amp.
 
 Product Versions
